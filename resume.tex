@@ -1,0 +1,170 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{fontawesome}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{0.75in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{0.75in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large ABHINAV SINGH}} &
+\href{https://terriblebassist.github.io}{\Large \faGlobe}
+\hspace{2pt}
+\href{https://www.linkedin.com/in/abhinavsingh1996/}{\Large \faLinkedin}
+\hspace{2pt}
+\verb|| \faEnvelope \par \hspace{1pt}
+\href{mailto:asingh175@gmail.com}{asingh175@gmail.com}
+\verb|| \faMobile \par \hspace{1pt} +(91)9455448152
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology}{Allahabad, India}
+      {Bachelor of Technology in Information Technology;  CGPA: 8.32}{Jul. 2014 -- Jun. 2018}
+    \resumeSubheading
+      {Ryan International School}{Gurgaon, India}
+      {Senior Secondary School;  Score: 96.2\%}{Jun.2013 -- Apr. 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Deutsche Bank (DBOI Global Services Pvt. Ltd.)}{Pune, India}
+      {Technology Associate, Business Finance}{Mar. 2021 - Present}
+      \begin{itemize}
+          \item Implemented a single CI/CD jenkins pipeline for efficient and on-demand deployment of applications to openshift container cloud platform.
+      \end{itemize}
+      
+      \resumeSubheading
+      {Deutsche Bank (DBOI Global Services Pvt. Ltd.)}{Pune, India}
+      {Technology Analyst, Business Finance}{Jul. 2018 - Feb. 2021}
+      \begin{itemize}
+          \item Worked on dbPalace (\textbf{DB P}rofit \textbf{A}nd \textbf{L}oss \textbf{AC}counting \textbf{E}ngine), a one stop shop to view and manage official P\&L production, making the process controlled, efficient and transparent.
+          \item Created new dbPalace screens for business users, improving visualization and eliminating the need for manual effort to generate insights.
+          \item Created a layout micro-service for serving dbPalace application screen layouts by decoupling source code from existing monolithic UI application.
+          \item Migrated monolithic spring applications to spring boot and deployed them to openshift container cloud platform, saving infra costs from hosted servers.
+      \end{itemize}
+      
+    \resumeSubheading
+      {Zefo (acquired by Quikr)}{Bangalore, India}
+      {SDE Intern}{Jan. 2018 - Jun. 2018}
+      \begin{itemize}
+          \item Created nRubik, a Google BigQuery powered data warehouse built with data collated from multiple disparate sources, helping automate the manual reporting process and generate insights.
+      \end{itemize}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{NAV Getter}
+      {Spring boot RESTful application which fetches latest/historic NAV of any AMFI registered mutual fund and stores them in spring cache in-memory. }
+    \resumeSubItem{Basic Web Crawler}
+      {Stores the keywords associated with web pages in a domain in a database.}
+    \resumeSubItem{Minesweeper}
+      {N x N Minesweeper game using basic OOPs concepts.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Programming Languages}{Java, C++ STL, C, Groovy, Python, SQL}
+    \resumeSubItem{Technologies/Platforms}{SpringBoot, Jenkins, Helm, Docker, Kubernetes, Openshift, Maven, JIRA, Git, Scrum}
+ \resumeSubHeadingListEnd
+
+
+%-------EXTRAS
+\section{Leadership \& Volunteer Experience}
+  \resumeSubHeadingListStart
+      \resumeSubItem{Placement Cell}
+      {\textit{(Overall Head Coordinator(2017-18))}: Led the placement core team and successfully coordinated with more than 70 companies for their recruitment drives for the 2017-18 placement season in IIITA.}
+      
+      \resumeSubItem{Music Society}
+      {\textit{(Head Coordinator(2016-2017))}: Organized various music events on an All India level at Effervescence, the annual cultural fest of IIIT Allahabad. Bassist/Pianist in a Hard/Funk Rock band.}
+      
+      \resumeSubItem{Prayaas}
+      {\textit{(Member(2016-2017))}: Volunteer organization maintained by IIIT Allahabad students to try to ameliorate the lives of underprivileged kids around the Jhalwa village by providing them with early primary education.}
+    \resumeSubHeadingListEnd
+      
+      
+\section{Extras}
+    \resumeSubHeadingListStart
+      \resumeSubItem{Scholarship(2014)}{SHE(Scholarship for Higher Education) recipient, Dept. of Science and Technology, India.}
+      \resumeSubItem{Travel}{Trekking/Hiking enthusiast. Have completed various north himalayan/south-indian treks and trails.}
+      \resumeSubItem{Fitness/Sports}{CrossFit enthusiast, Football, Swimming}
+      \resumeSubItem{Music}{Piano, Bass Guitar, Bagpipes}
+    \resumeSubHeadingListEnd
+     
+%-------------------------------------------
+\end{document}
