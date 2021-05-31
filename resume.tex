@@ -11,7 +11,8 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-
+\usepackage{graphicx}
+\graphicspath{ {./logos/} }
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -23,7 +24,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{0.75in}
-\addtolength{\topmargin}{-0.8in}
+\addtolength{\topmargin}{-0.6in}
 \addtolength{\textheight}{0.75in}
 
 \urlstyle{same}
@@ -69,29 +70,16 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large ABHINAV SINGH}} &
+\begin{tabular*}{\textwidth}c\textbf{{\Huge ABHINAV SINGH}}\\
 \href{mailto:asingh175@gmail.com}{ \faEnvelope}
-{asingh175@gmail.com}
-\href{tel:+919455448152}{ \faPhoneSquare}{+91-9455448152}
+\href{mailto:asingh175@gmail.com}{asingh175@gmail.com}
+\href{tel:+919455448152}{ \faPhoneSquare}\href{tel:+919455448152}{+91-9455448152}
+\href{https://singhabhinav.me}{\Large \faGlobe}\hspace{2pt}\href{https://singhabhinav.me}{singhabhinav.me}
+\href{https://github.com/terriblebassist}{\Large \faGithub}\href{https://github.com/terriblebassist}{ terriblebassist}
+\href{https://www.linkedin.com/in/abhinavsingh1996/}{\Large \faLinkedinSquare}\href{https://www.linkedin.com/in/abhinavsingh1996/}{ /in/abhinavsingh1996}
 
-\href{https://singhabhinav.me}{\Large \faGlobe}\hspace{2pt}{singhabhinav.me}
-\hspace{2pt}
-\href{https://github.com/terriblebassist}{\Large \faGithub}
-\hspace{2pt}
-\href{https://www.linkedin.com/in/abhinavsingh1996/}{\Large \faLinkedinSquare}
 \end{tabular*}
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Indian Institute of Information Technology}{Allahabad, India}
-      {Bachelor of Technology in Information Technology;  CGPA: 8.32}{Jul. 2014 -- Jun. 2018}
-    \resumeSubheading
-      {Ryan International School}{Gurgaon, India}
-      {Senior Secondary School;  Score: 96.2\%}{Jun.2013 -- Apr. 2014}
-  \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
@@ -99,75 +87,82 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Deutsche Bank (DBOI Global Services Pvt. Ltd.)}{Pune, India}
-      {Technology Associate, Business Finance}{Mar. 2021 - Present}
+      {\includegraphics[height=2ex, width=1em]{db-logo} Deutsche Bank (Technology Associate)}{Pune, India}
+      {Jenkins, Groovy, Openshift, Helm, Kubernetes, Spring Cloud}{Mar. 2021 - Present}
       \begin{itemize}
-          \item Implemented a declarative CI/CD Jenkins pipeline for efficient and on-demand deployment of applications to an Openshift cloud platform, using Helm.
+          \item Implemented a single click CI/CD declarative Jenkins pipeline for deployment of applications to an Openshift container cloud platform, improving the efficiency of the deployment process, reducing manual effort and achieving on-demand deployments.
       \end{itemize}
       
       \resumeSubheading
-      {Deutsche Bank (DBOI Global Services Pvt. Ltd.)}{Pune, India}
-      {Technology Analyst, Business Finance}{Jul. 2018 - Feb. 2021}
+      {\includegraphics[height=2ex, width=1em]{db-logo} Deutsche Bank (Technology Analyst)}{Pune, India}
+      {Java, AngularJS, Python, Helm, Jenkins, Openshift, Spring Boot}{Jul. 2018 - Feb. 2021}
       \begin{itemize}
-          \item Worked on \textit{dbPalace} (DB Profit And Loss ACcounting Engine), a one stop shop to view and manage official P\&L production, making the process controlled, efficient and transparent.
-          \item Created new financial screens for users, improving visualization \& reducing manual effort drastically.
-          \item Migrated monolithic Spring applications to Spring Boot and deployed them to Openshift cloud platform, saving infra costs from hosted servers and improving the deployment process.
-          \item Reduced configuration overhead and mis-configuration issues within the project by migrating environment-based external config to profile-based hierarchical config.
+          \item Worked on \textit{dbPalace} (DB Profit And Loss ACcounting Engine) platform, a one stop shop to view and manage official P\&L production, making the process controlled, efficient and transparent.
+          \item Created new financial screens for platform users, improving visualization and reducing manual effort.
+          \item Migrated monolithic Spring applications to Spring Boot by converting XML beans to annotated Java beans, simplified dependency management and configured health indicators.
+          \item Deployed migrated Spring Boot applications to Openshift cloud platform using Docker and Helm, saving infra costs from hosted servers and improving the deployment process.
+          \item Reduced configuration overhead and mis-configuration issues across the project by migrating environment-based external config to profile-based hierarchical config.
       \end{itemize}
       
     \resumeSubheading
-      {Zefo (acquired by Quikr)}{Bangalore, India}
-      {SDE Intern}{Jan. 2018 - Jun. 2018}
+      {\includegraphics[height=2ex, width=1.5em]{zefo-logo} Zefo (SDE Intern)}{Bangalore, India}
+      {Python, AWS, GCP }{Jan. 2018 - Jun. 2018}
       \begin{itemize}
-          \item Created a Google BigQuery data warehouse with data collated using AWS Lambda from multiple sources(AWS RDS, AWS Kinesis), helping automate manual processes and generate insights.
+          \item Created a Google BigQuery data warehouse with data collated using serverless functions(AWS Lambda) from multiple sources(AWS RDS/Aurora, AWS Kinesis), helping automate manual processes and generate visualizations(Google Data Studio).
       \end{itemize}
 
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\includegraphics[height=2.5ex, width=1em]{iiita-logo.jpg} Indian Institute of Information Technology}{Allahabad, India}
+      {Bachelor of Technology in Information Technology;  CGPA: 8.32}{Jul. 2014 -- Jun. 2018}
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Investscape}
-      {Dashboard for tracking mutual fund investments, using python-dash and Google Sheets/MongoDB.}
+    \resumeSubItem{\href{https://github.com/terriblebassist/investscape-dash}{Investscape}}
+      {Dashboard for tracking mutual fund investments, created using \textit{python-dash, Plotly, Flask, Pandas, Bootstrap and Google Sheets API/MongoDB}.}
     \resumeSubItem{Myfolio}
-      {Simple responsive portfolio website using VueJS, Scrollreveal.JS, and Tailwind CSS.}
+      {Simple responsive portfolio website using \textit{VueJS, Scrollreveal.JS, and Tailwind CSS}.}
     \resumeSubItem{Nodeseeker}
-      {GraphQL/REST API for fetching latest NAV of mutual funds, written using ExpressJS. }
+      {\textit{GraphQL/REST API} for fetching latest NAV of mutual funds, written using \textit{ExpressJS}. }
     \resumeSubItem{NAVseeker}
-      {Spring Boot REST API which fetches latest/historic NAV of mutual funds and stores it in Ehcache.}
+      {\textit{Spring Boot REST API} which fetches latest/historic NAV of mutual funds and stores it in \textit{Ehcache}.}
     \resumeSubItem{Soccer Mine}
-      {Python scrapy web crawler which generates and dumps FIFA21 player stats from FifaIndex.}
+      {\textit{Python scrapy} web crawler which generates and dumps FIFA21 player stats from FifaIndex.}
   \resumeSubHeadingListEnd
 
 
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
  \resumeSubHeadingListStart
-    \resumeSubItem{Programming Languages}{Java, C++ STL, C, Python, Groovy, MySQL, GraphQL, JavaScript}
-    \resumeSubItem{Technologies/Platforms}{SpringBoot, Docker, Kubernetes, Openshift, Helm, Maven, Jenkins, JIRA, Git, Scrum}
+    \resumeSubItem{Programming Languages}{Java, Python, JavaScript, C++ STL, C, Groovy, MySQL, GraphQL, HTML5, CSS3}
+    \resumeSubItem{Technologies/Platforms}{Spring Framework, Flask, Django, Express, Docker, Kubernetes, Openshift, Helm, Maven, Jenkins, JIRA, Git, Scrum, TDD, BDD(Cucumber/Selenium), Bootstrap, TailwindCSS}
  \resumeSubHeadingListEnd
-
 
 %-------EXTRAS
 \section{Leadership \& Volunteer Experience}
   \resumeSubHeadingListStart
-      \resumeSubItem{Placement Cell}
-      {\textit{(Overall Head Coordinator, 2017-18)} Spearheaded the core placement team and successfully coordinated with more than 70 companies for their recruitment drives for the 2017-18 placement season in IIITA.}
+      \resumeSubItem{Placement Cell, IIIT Allahabad}
+      {Overall Head Coordinator (2017-18)}
       
-      \resumeSubItem{Music Society}
-      {\textit{(Head Coordinator, 2016-2017)} Bassist/Pianist in a Hard/Funk Rock band. Organized various national level music events at Effervescence, the annual cultural fest of IIIT Allahabad.}
+      \resumeSubItem{Music Society, IIIT Allahabad}
+      {Head Coordinator (2016-2017)}
       
       \resumeSubItem{Prayaas}
-      {\textit{(Member, 2016-2017)} Volunteer organization maintained by IIIT Allahabad students to try to ameliorate the lives of underprivileged kids around the Jhalwa village by providing them with early primary education.}
+      {Member (2016-2017)}
     \resumeSubHeadingListEnd
       
       
 \section{Extras}
     \resumeSubHeadingListStart
-      \resumeSubItem{Travel}{Trekking/Hiking enthusiast. Have completed various North Himalayan/South-Indian treks and trails.}
-      \resumeSubItem{Fitness/Sports}{CrossFit enthusiast, Football, Swimming}
-      \resumeSubItem{Music}{Piano, Bass Guitar, Bagpipes}
+      \resumeSubItem{Hobbies}{Trekking/Hiking, CrossFit, Football, Swimming, Piano, Bass Guitar, Bagpipes}
     \resumeSubHeadingListEnd
      
 %-------------------------------------------
