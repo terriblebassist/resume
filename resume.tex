@@ -12,7 +12,7 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
-\graphicspath{ {./logos/} }
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -26,7 +26,7 @@
 \addtolength{\textwidth}{0.75in}
 \addtolength{\topmargin}{-0.6in}
 \addtolength{\textheight}{0.75in}
-
+\graphicspath{ {./images/} }
 \urlstyle{same}
 
 \raggedbottom
@@ -87,14 +87,14 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {\includegraphics[height=2ex, width=1em]{db-logo} Deutsche Bank (Technology Associate)}{Pune, India}
+      {\includegraphics[height=2ex, width=0.9em]{db-logo} Deutsche Bank (Technology Associate)}{Pune, India}
       {Jenkins, Groovy, Openshift, Helm, Kubernetes, Spring Cloud}{Mar. 2021 - Present}
       \begin{itemize}
           \item Implemented a single click CI/CD declarative Jenkins pipeline for deployment of applications to an Openshift container cloud platform, improving the efficiency of the deployment process, reducing manual effort and achieving on-demand deployments.
       \end{itemize}
       
       \resumeSubheading
-      {\includegraphics[height=2ex, width=1em]{db-logo} Deutsche Bank (Technology Analyst)}{Pune, India}
+      {\includegraphics[height=2ex, width=0.9em]{db-logo} Deutsche Bank (Technology Analyst)}{Pune, India}
       {Java, AngularJS, Python, Helm, Jenkins, Openshift, Spring Boot}{Jul. 2018 - Feb. 2021}
       \begin{itemize}
           \item Worked on \textit{dbPalace} (DB Profit And Loss ACcounting Engine) platform, a one stop shop to view and manage official P\&L production, making the process controlled, efficient and transparent.
@@ -105,7 +105,7 @@
       \end{itemize}
       
     \resumeSubheading
-      {\includegraphics[height=2ex, width=1.5em]{zefo-logo} Zefo (SDE Intern)}{Bangalore, India}
+      {\includegraphics[height=2ex, width=1.25em]{zefo-logo} Zefo (SDE Intern)}{Bangalore, India}
       {Python, AWS, GCP }{Jan. 2018 - Jun. 2018}
       \begin{itemize}
           \item Created a Google BigQuery data warehouse with data collated using serverless functions(AWS Lambda) from multiple sources(AWS RDS/Aurora, AWS Kinesis), helping automate manual processes and generate visualizations(Google Data Studio).
@@ -113,6 +113,12 @@
 
   \resumeSubHeadingListEnd
 
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Programming Languages}{Java, Python, JavaScript, C++ STL, C, Groovy, MySQL, GraphQL, HTML5, CSS3}
+    \resumeSubItem{Technologies/Platforms}{Spring Framework, Flask, Django, Express, Docker, Kubernetes, Openshift, Helm, Maven, Jenkins, JIRA, Git, Scrum, TDD, BDD(Cucumber,Selenium), Bootstrap, TailwindCSS}
+ \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -126,7 +132,7 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://github.com/terriblebassist/investscape-dash}{Investscape}}
+    \resumeSubItem{Investscape}
       {Dashboard for tracking mutual fund investments, created using \textit{python-dash, Plotly, Flask, Pandas, Bootstrap and Google Sheets API/MongoDB}.}
     \resumeSubItem{Myfolio}
       {Simple responsive portfolio website using \textit{VueJS, Scrollreveal.JS, and Tailwind CSS}.}
@@ -139,22 +145,15 @@
   \resumeSubHeadingListEnd
 
 
-%--------PROGRAMMING SKILLS------------
-\section{Skills}
- \resumeSubHeadingListStart
-    \resumeSubItem{Programming Languages}{Java, Python, JavaScript, C++ STL, C, Groovy, MySQL, GraphQL, HTML5, CSS3}
-    \resumeSubItem{Technologies/Platforms}{Spring Framework, Flask, Django, Express, Docker, Kubernetes, Openshift, Helm, Maven, Jenkins, JIRA, Git, Scrum, TDD, BDD(Cucumber/Selenium), Bootstrap, TailwindCSS}
- \resumeSubHeadingListEnd
+
 
 %-------EXTRAS
 \section{Leadership \& Volunteer Experience}
   \resumeSubHeadingListStart
-      \resumeSubItem{Placement Cell, IIIT Allahabad}
+      \resumeSubItem{Placement Cell, IIIT-A}
       {Overall Head Coordinator (2017-18)}
-      
-      \resumeSubItem{Music Society, IIIT Allahabad}
+      \resumeSubItem{Music Society, IIIT-A}
       {Head Coordinator (2016-2017)}
-      
       \resumeSubItem{Prayaas}
       {Member (2016-2017)}
     \resumeSubHeadingListEnd
